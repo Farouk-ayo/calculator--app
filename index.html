@@ -11,30 +11,46 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <main class="main">
       <section class="calculator">
         <div class="header">
-          <h3 class="header--text">calc</h3>
+          <h3 class="header--text txt">calc</h3>
           <div class="toggle">
-            <p class="toggle--text">theme</p>
-            <button class="btn--toggle"></button>
+            <p class="toggle--text txt">theme</p>
+            <div>
+              <div class="theme">
+                <div class="theme--num">
+                  <p id="one" class="txt">1</p>
+                  <p id="two" class="txt">2</p>
+                  <p id="three" class="txt">3</p>
+                </div>
+                <div class="check gridBg">
+                  <div class="circle same--circle"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <input class="number" name="" id="" />
 
-        <div class="grid">
+        <div class="grid gridBg">
           <span class="btn"><p class="num">7</p></span>
           <span class="btn"><p class="num">8</p></span>
           <span class="btn"><p class="num">9</p></span>
-          <span class="btn del"><p class="num">del</p></span>
+          <span class="same del"><p class="num">del</p></span>
           <span class="btn"><p class="num">4</p></span>
           <span class="btn"><p class="num">5</p></span>
           <span class="btn"><p class="num">6</p></span>
@@ -46,9 +62,9 @@
           <span class="btn"><p class="num">.</p></span>
           <span class="btn"><p class="num">0</p></span>
           <span class="btn"><p class="num">/</p></span>
-          <span class="btn"><p class="num">x</p></span>
-          <span class="btn btn--reset"><p class="num">reset</p></span>
-          <span class="btn btn--equal"><p class="num">=</p></span>
+          <span class="btn"><p class="num">×</p></span>
+          <span class="same btn--reset"><p class="num">reset</p></span>
+          <span class="btn--equal same--circle"><p class="num">=</p></span>
         </div>
       </section>
 
@@ -56,7 +72,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Farouk</a>.
       </div>
     </main>
   </body>
